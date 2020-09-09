@@ -10,7 +10,7 @@ dv_b_0 = -1 * np.matmul(J_inv, np.cross(v_b_0, np.matmul(J, v_b_0)))
 Y_0 = v_b_0
 T0 = 0
 dT = 1
-tF = 1800
+tF = 1801
 
 
 def v_b_dot(t, Y):
@@ -36,6 +36,8 @@ for index in range(np.shape(output)[0] - 1):
     result[index, 0] = output[index][1]
     result[index, 1] = output[index][2]
     result[index, 2] = output[index][3]
+
+print(result[-1, :])
 
 fig, ax = plt.subplots(3, sharex=True)
 ax[0].plot(result[:, 0])
