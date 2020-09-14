@@ -10,7 +10,7 @@ dv_b_0 = -1 * np.matmul(J_inv, np.cross(v_b_0, np.matmul(J, v_b_0)))
 Y_0 = v_b_0
 T0 = 0
 dT = 1
-tF = 1801
+tF = 1800
 
 
 def v_b_dot(t, Y):
